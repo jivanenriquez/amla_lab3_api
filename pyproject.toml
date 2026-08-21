@@ -1,0 +1,23 @@
+[project]
+name = "amla-lab3-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jivan Enriquez", email = "FerdinandoJr.Enriquez@student.uts.edu.au" }
+]
+requires-python = ">=3.12.13"
+dependencies = [
+    "fastapi==0.139.0",
+    "joblib==1.5.3",
+    "pandas==2.2.2",
+    "scikit-learn==1.6.1",
+    "uvicorn==0.50.0",
+]
+
+[project.scripts]
+amla-lab3-api = "amla_lab3_api:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
